@@ -1,81 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap5_portfolio</title>
      <!-- Bootstrap CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+     
 
 </head>
 <body>
      
-     <!-- 헤더 -->
-     <header class="bg-dark text-white text-center py-5">
-        <h1>내 포트폴리오</h1>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
+      <!-- 헤더 -->
+      <header class="fixed-top">
+        <div class="container d-flex justify-content-between align-items-center py-1">
+            <h1 class="mb-0 text-white">My<br>Portfolio</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">소개</a>
+                            <a class="nav-link" href="#Home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">프로젝트</a>
+                            <a class="nav-link" href="#About">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">연락처</a>
+                            <a class="nav-link" href="#Portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
-    <!-- 소개 섹션 -->
-    <section id="about" class="py-5">
-        <div class="container text-center">
-            <h2>소개</h2>
-            <img src="profile.jpg" alt="프로필 사진" class="rounded-circle mb-3" style="width: 150px; height: 150px;">
-            <p>안녕하세요! 저는 웹 개발자입니다. 다양한 프로젝트를 통해 경험을 쌓아왔습니다.</p>
+    <!-- 아래 섹션 -->
+    <section id="Home" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <h2>안녕하세요!</h2>
+                <p>저의 포트폴리오에 오신 것을 환영합니다🤗</p>
+            </div>
         </div>
     </section>
 
-    <!-- 프로젝트 섹션 -->
-    <section id="projects" class="bg-light py-5">
+    <!-- 소개 섹션 -->
+    <section id="About" class="py-3">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-4">
+                    <img src="profile.jpeg" alt="프로필 사진" class="rounded-circle mb-3" style="width: 150px; height: 200px;">
+                    <h2>전 혜 정</h2>
+                    <h4>취준생</h4>
+                    <p>프론트엔드 개발자가 되기 위해 열심히 공부 중</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 포트폴리오 섹션 -->
+    <section id="Portfolio" class="bg-light py-5">
         <div class="container">
             <h2 class="text-center">프로젝트</h2>
             <div class="row">
+                <!-- 프로젝트 카드 1 -->
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <img src="project1.jpg" class="card-img-top" alt="프로젝트 1">
+                        <img src="project.jpg" class="card-img-top" alt="프로젝트 1" data-bs-toggle="modal" data-bs-target="#projectModal1">
                         <div class="card-body">
                             <h5 class="card-title">프로젝트 1</h5>
-                            <p class="card-text">프로젝트 1에 대한 간단한 설명입니다.</p>
-                            <a href="#" class="btn btn-primary">자세히 보기</a>
+                            <p class="card-text">프로젝트 1 - 하나씩 채워 나가야겠죠?</p>
                         </div>
                     </div>
                 </div>
+                <!-- 프로젝트 카드 2 -->
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <img src="project2.jpg" class="card-img-top" alt="프로젝트 2">
+                        <img src="project.jpg" class="card-img-top" alt="프로젝트 2" data-bs-toggle="modal" data-bs-target="#projectModal2">
                         <div class="card-body">
                             <h5 class="card-title">프로젝트 2</h5>
-                            <p class="card-text">프로젝트 2에 대한 간단한 설명입니다.</p>
-                            <a href="#" class="btn btn-primary">자세히 보기</a>
+                            <p class="card-text">프로젝트 2 - 하나씩 채워 나가야겠죠?</p>
                         </div>
                     </div>
                 </div>
+                <!-- 프로젝트 카드 3 -->
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <img src="project3.jpg" class="card-img-top" alt="프로젝트 3">
+                        <img src="project.jpg" class="card-img-top" alt="프로젝트 3" data-bs-toggle="modal" data-bs-target="#projectModal3">
                         <div class="card-body">
                             <h5 class="card-title">프로젝트 3</h5>
-                            <p class="card-text">프로젝트 3에 대한 간단한 설명입니다.</p>
-                            <a href="#" class="btn btn-primary">자세히 보기</a>
+                            <p class="card-text">프로젝트 3 - 하나씩 채워 나가야겠죠?</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 프로젝트 카드 4 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="project.jpg" class="card-img-top" alt="프로젝트 4" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                        <div class="card-body">
+                            <h5 class="card-title">프로젝트 4</h5>
+                            <p class="card-text">프로젝트 4 - 하나씩 채워 나가야겠죠?</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 프로젝트 카드 5 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="project.jpg" class="card-img-top" alt="프로젝트 5" data-bs-toggle="modal" data-bs-target="#projectModal5">
+                        <div class="card-body">
+                            <h5 class="card-title">프로젝트 5</h5>
+                            <p class="card-text">프로젝트 5 - 하나씩 채워 나가야겠죠?</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 프로젝트 카드 6 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="project.jpg" class="card-img-top" alt="프로젝트 6" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                        <div class="card-body">
+                            <h5 class="card-title">프로젝트 6</h5>
+                            <p class="card-text">프로젝트 6 - 하나씩 채워 나가야겠죠?</p>
                         </div>
                     </div>
                 </div>
@@ -83,22 +133,141 @@
         </div>
     </section>
 
-    <!-- 연락처 섹션 -->
-    <section id="contact" class="py-5">
-        <div class="container text-center">
-            <h2>연락처</h2>
-            <p>이메일: example@example.com</p>
-            <p>소셜 미디어 링크</p>
-            <a href="#" class="btn btn-outline-primary">LinkedIn</a>
-            <a href="#" class="btn btn-outline-primary">GitHub</a>
+        <!-- 프로젝트 1 모달 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel1">프로젝트 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="project.jpg" class="img-fluid" alt="프로젝트 1">
+                    <p>프로젝트 1 - 아직 뭐가 없어요오오오오오</p>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <!-- 푸터 -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2023 내 포트폴리오. 모든 권리 보유.</p>
-    </footer>
+    <!-- 프로젝트 2 모달 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel2">프로젝트 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="project.jpg" class="img-fluid" alt="프로젝트 2">
+                    <p>프로젝트 2 - 아직 뭐가 없어요오오오오오</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- 프로젝트 3 모달 -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel3">프로젝트 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="project.jpg" class="img-fluid" alt="프로젝트 3">
+                    <p>프로젝트 3 - 아직 뭐가 없어요오오오오오</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 프로젝트 4 모달 -->
+    <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel4">프로젝트 4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="project.jpg" class="img-fluid" alt="프로젝트 4">
+                    <p>프로젝트 4 - 아직 뭐가 없어요오오오오오</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 프로젝트 5 모달 -->
+    <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModalLabel5" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel5">프로젝트 5</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="project.jpg" class="img-fluid" alt="프로젝트 5">
+                    <p>프로젝트 5 - 아직 뭐가 없어요오오오오오</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 프로젝트 6 모달 -->
+    <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModalLabel6" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel6">프로젝트 6</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="project.jpg" class="img-fluid" alt="프로젝트 6">
+                    <p>프로젝트 6 - 아직 뭐가 없어요오오오오오</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 연락처 섹션 -->
+<section id="contact" class="py-5">
+    <div class="container text-center">
+        <h2>010-7924-6113</h2>
+        <p>이메일: hj07090752@gmail.com</p>
+        
+        <!-- 연락처 폼 -->
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-8">
+                <form class="bg-light p-4 rounded shadow">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">이름</label>
+                        <input type="text" class="form-control" id="name" placeholder="이름을 입력하세요" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">이메일</label>
+                        <input type="email" class="form-control" id="email" placeholder="이메일을 입력하세요" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">메시지</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="메시지를 입력하세요" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">제출</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- 푸터 -->
+<footer class="text-white text-center py-3 fixed-bottom">
+    <div class="bg-light p-3 d-flex justify-content-between align-items-center">
+        <p class="mb-0">&copy; 2024 My Portfolio. 모든 권리 보유.</p>
+        <div>
+            <a href="#" class="text-black me-3">Instagram</a>
+            <a href="#" class="text-black">GitHub</a>
+        </div>
+    </div>
+</footer>
 
     <!-- Bootstrap JavaScript and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
