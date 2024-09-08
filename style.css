@@ -1,0 +1,76 @@
+body {
+    padding-top: 150px; /* 헤더의 높이에 맞춰 여백 추가 */
+    padding-bottom: 60px; /* 푸터의 높이에 맞춰 여백 추가 */
+}
+
+/* 기본 내비게이션 바 스타일 */
+header {
+    background-color: cadetblue; /* 헤더 배경색 설정 */
+}
+.navbar-nav{
+    padding-top: 60px;
+    gap: 10px;
+}
+
+/* 내비게이션 링크 스타일 */
+.nav-link {
+    color: #ffffff; /* 링크 색상 */
+    transition: color 0.3s; /* 색상 변화에 부드러운 전환 효과 추가 */
+    font-size: larger;
+}
+
+.nav-link:hover {
+    color: #f6dd92; /* 호버 시 색상 변경 */
+
+}
+
+#Home{
+
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem; /* 작은 화면에서 패딩 조정 */
+    }
+
+    .nav-link {
+        font-size: 1.2rem; /* 작은 화면에서 링크 크기 조정 */
+    }
+}
+#about {
+    background-color: #f8f9fa; /* 섹션 배경색 */
+}
+
+h2 {
+    font-size: 2rem; /* 이름 크기 */
+}
+
+h4 {
+    font-size: 1.5rem; /* 직업 크기 */
+    color: #6c757d; /* 직업 색상 */
+}
+
+p {
+    font-size: 1rem; /* 소개 크기 */
+    color: #495057; /* 소개 색상 */
+}
+#contact {
+    background-color: beige; /* 섹션 배경색 */
+}
+
+.form-control {
+    border-radius: 0.5rem; /* 입력 필드 모서리 둥글게 */
+}
+.form-label {
+    font-weight: bold; /* 레이블 텍스트 스타일 */
+}
+.btn-primary {
+    background-color: #343a40; /* 버튼 배경색 */
+    border: none; /* 버튼 테두리 제거 */
+}
+.btn-primary:hover {
+    background-color: #0056b3; /* 버튼 호버 색상 */
+}
